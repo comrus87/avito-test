@@ -1,0 +1,54 @@
+.form {
+	width: 331px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 27px;
+}
+
+.btnForm {
+	background: #4997D0;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	width: 100%;
+	padding: 8px 0 7px;
+	cursor: pointer;
+}
+
+.btnForm:hover,
+.btnForm:focus {
+	opacity: 0.7;
+}
+
+.input {
+	display: block;
+	width: 100%;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000;
+	padding: 8px 11px 7px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.input::placeholder {
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 15px;
+	color: #ccc;
+}
+
+@media (max-width: 767px) {
+	.form {
+		width: 100%;
+		padding: 0 22px;
+	}
+}

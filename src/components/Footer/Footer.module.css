@@ -1,0 +1,16 @@
+.container {
+	border-top: 1px solid #ccc;
+	margin-top: 347px;
+	padding: 12px 0;
+}
+
+.copyright {
+	font-family: Roboto Condensed;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	justify-content: center;
+	color: #ccc;
+	text-transform: uppercase;
+}
