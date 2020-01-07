@@ -3,7 +3,6 @@ import {reset} from 'redux-form';
 
 const SET_PHOTOS = 'gallery/SET_PHOTOS';
 const SET_MODAL_PHOTO = 'gallery/SET_MODAL_PHOTO';
-const SET_COMMENT = 'gallery/SET_COMMENT'
 
 let initialState = {
 	photos: [],
@@ -36,7 +35,6 @@ export const setPhotos = photos => ({type: SET_PHOTOS, photos});
 
 export const setModalPhoto = (photoId, photoUrl, comments) => ({type: SET_MODAL_PHOTO, payload: {photoId, photoUrl, comments}});
 
-export const setCommentAC = (comment) => ({type: SET_COMMENT, comment})
 
 export const getPhotos = () => async (dispatch) => {
 	let data = await userApi.getPhotos();
