@@ -18,6 +18,7 @@
   cursor: pointer;
   top: 21px;
   right: 21px;
+  z-index: 15;
 }
 
 .btnClose:hover,
@@ -50,15 +51,13 @@
 
 .modalContainer {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 
 @media (max-width: 767px) {
   .modal {
     width: 100%;
-    padding: 0 0 48px;
+    padding: 205px 0 48px;
     left: 0;
     top: 50%;
     transform: translate(0, -50%);
@@ -68,8 +67,15 @@
     flex-direction: column;
   }
 
+  .firstColumn {
+    order: 2;
+  }
+
   .modalPicture {
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 160px);
+    width: 320px;
   }
 
 }

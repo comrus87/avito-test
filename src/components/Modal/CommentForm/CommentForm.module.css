@@ -48,7 +48,8 @@
 
 @media (max-width: 767px) {
 	.form {
-		width: 100%;
+		width: 320px;
 		padding: 0 22px;
+		margin: 27px auto 0;
 	}
 }

@@ -14,13 +14,15 @@ const Modal = props => {
 		<div className={classes.modal}>
 			<button className={classes.btnClose} onClick={props.closeModal} aria-label='Закрыть'></button>
 			<div className={classes.modalContainer}>
-				<img className={classes.modalPicture} 
-					 src={props.modalPhotoUrl} 
-					 width='331' 
-					 height='205' 
-					 alt='Увеличенное фото' />
+				<div className={classes.firstColumn}>
+					<img className={classes.modalPicture} 
+						 src={props.modalPhotoUrl} 
+						 width='331' 
+						 height='205' 
+						 alt='Увеличенное фото' />
+					<CommentForm onSubmit={onSubmit} />
+				</div>
 				<CommentList comments={props.comments} />
-				<CommentForm onSubmit={onSubmit} />
 			</div>
 		</div>
 	)
